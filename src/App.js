@@ -3,6 +3,7 @@ import './App.css';
 import UseEffect from './pages/UseEffect';
 import UseInput from './pages/UseInput';
 import UseState from './pages/UseState';
+import UseTaps from './pages/UseTaps';
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
           <Link to="/useInput"> useInput</Link>
         </li>
         <li>
+          <Link to="/useTaps"> useTaps</Link>
+        </li>
+        <li>
           <Link to="/useEffect">useEffect</Link>
         </li>
       </ul>
@@ -24,6 +28,7 @@ const App = () => {
           <Route path="/" element={<Navigate to="/useState" />} />
           <Route path="/useState" element={<UseState />} />
           <Route path="/useInput" element={<UseInput />} />
+          <Route path="/UseTaps" element={<UseTaps />} />
           <Route path="/useEffect" element={<UseEffect />} />
         </Routes>
       </div>
