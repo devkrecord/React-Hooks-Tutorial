@@ -12,7 +12,7 @@ const content = [
 ];
 
 const UseTaps = () => {
-  const { currentItem, changeItem } = useTabs(0);
+  const { currentItem, changeItem } = useTabs(0, content);
   return (
     <div>
       <h2 className="subTitle">useTap</h2>
