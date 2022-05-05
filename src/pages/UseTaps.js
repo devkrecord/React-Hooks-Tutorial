@@ -12,10 +12,10 @@ const content = [
 ];
 
 const UseTaps = () => {
-  const { currentItem, changeItem } = useTabs(0, content);
+  const { currentItem, changeItem } = useTabs(0);
   return (
     <div>
-      <h2 className="subTitle">UseTaps</h2>
+      <h2 className="subTitle">useTap</h2>
       {content.map((section, index) => (
         <button onClick={() => changeItem(index)}>{section.tab}</button>
       ))}
