@@ -4,6 +4,7 @@ import UseEffect from './pages/UseEffect';
 import UseInput from './pages/UseInput';
 import UseState from './pages/UseState';
 import UseTaps from './pages/UseTaps';
+import UseTitle from './pages/UseTitle';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
         <li>
           <Link to="/useEffect">useEffect</Link>
         </li>
+        <li>
+          <Link to="/useTitle">useTitle</Link>
+        </li>
       </ul>
       <div className="container">
         <Routes>
@@ -30,6 +34,7 @@ const App = () => {
           <Route path="/useInput" element={<UseInput />} />
           <Route path="/UseTaps" element={<UseTaps />} />
           <Route path="/useEffect" element={<UseEffect />} />
+          <Route path="/useTitle" element={<UseTitle />} />
         </Routes>
       </div>
     </div>
