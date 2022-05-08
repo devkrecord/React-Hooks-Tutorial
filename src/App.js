@@ -1,31 +1,33 @@
-import { Link, Navigate, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
 import UseEffect from './pages/UseEffect';
 import UseInput from './pages/UseInput';
 import UseState from './pages/UseState';
 import UseTaps from './pages/UseTaps';
 import UseTitle from './pages/UseTitle';
+import UseClick from './pages/UseClick';
+import UseConfirm from './pages/UseConfirm';
 
 const App = () => {
+  const nav = [
+    'useState',
+    'useInput',
+    'UseTaps',
+    'useEffect',
+    'useTitle',
+    'useClick',
+    'UseConfirm',
+  ];
+
   return (
     <div className="App">
       <h1 className="title">실전형 리액트 Hooks 10개</h1>
       <ul className="nav">
-        <li>
-          <Link to="/useState"> useState</Link>
-        </li>
-        <li>
-          <Link to="/useInput"> useInput</Link>
-        </li>
-        <li>
-          <Link to="/useTaps"> useTaps</Link>
-        </li>
-        <li>
-          <Link to="/useEffect">useEffect</Link>
-        </li>
-        <li>
-          <Link to="/useTitle">useTitle</Link>
-        </li>
+        {nav.map((item) => (
+          <li key={item}>
+            <Link to={`/${item}`}>{item}</Link>
+          </li>
+        ))}
       </ul>
       <div className="container">
         <Routes>
@@ -35,6 +37,8 @@ const App = () => {
           <Route path="/UseTaps" element={<UseTaps />} />
           <Route path="/useEffect" element={<UseEffect />} />
           <Route path="/useTitle" element={<UseTitle />} />
+          <Route path="/UseClick" element={<UseClick />} />
+          <Route path="/UseConfirm" element={<UseConfirm />} />
         </Routes>
       </div>
     </div>
