@@ -8,17 +8,19 @@ import UseTitle from './pages/UseTitle';
 import UseClick from './pages/UseClick';
 import UseConfirm from './pages/UseConfirm';
 import UseHover from './pages/UseHover';
+import UsePreventLeave from './pages/UsePreventLeave';
 
 const App = () => {
   const nav = [
     'useState',
     'useInput',
-    'UseTaps',
+    'useTaps',
     'useEffect',
     'useTitle',
     'useClick',
     'useHover',
-    'UseConfirm',
+    'useConfirm',
+    'usePreventLeave',
   ];
 
   return (
@@ -36,12 +38,13 @@ const App = () => {
           <Route path="/" element={<Navigate to="/useState" />} />
           <Route path="/useState" element={<UseState />} />
           <Route path="/useInput" element={<UseInput />} />
-          <Route path="/UseTaps" element={<UseTaps />} />
+          <Route path="/useTaps" element={<UseTaps />} />
           <Route path="/useEffect" element={<UseEffect />} />
           <Route path="/useTitle" element={<UseTitle />} />
-          <Route path="/UseClick" element={<UseClick />} />
-          <Route path="/UseHover" element={<UseHover />} />
-          <Route path="/UseConfirm" element={<UseConfirm />} />
+          <Route path="/useClick" element={<UseClick />} />
+          <Route path="/useHover" element={<UseHover />} />
+          <Route path="/useConfirm" element={<UseConfirm />} />
+          <Route path="/usePreventLeave" element={<UsePreventLeave />} />
         </Routes>
       </div>
     </div>
