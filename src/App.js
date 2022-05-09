@@ -7,6 +7,7 @@ import UseTaps from './pages/UseTaps';
 import UseTitle from './pages/UseTitle';
 import UseClick from './pages/UseClick';
 import UseConfirm from './pages/UseConfirm';
+import UseHover from './pages/UseHover';
 
 const App = () => {
   const nav = [
@@ -16,6 +17,7 @@ const App = () => {
     'useEffect',
     'useTitle',
     'useClick',
+    'useHover',
     'UseConfirm',
   ];
 
@@ -38,6 +40,7 @@ const App = () => {
           <Route path="/useEffect" element={<UseEffect />} />
           <Route path="/useTitle" element={<UseTitle />} />
           <Route path="/UseClick" element={<UseClick />} />
+          <Route path="/UseHover" element={<UseHover />} />
           <Route path="/UseConfirm" element={<UseConfirm />} />
         </Routes>
       </div>
