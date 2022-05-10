@@ -9,6 +9,7 @@ import UseClick from './pages/UseClick';
 import UseConfirm from './pages/UseConfirm';
 import UseHover from './pages/UseHover';
 import UsePreventLeave from './pages/UsePreventLeave';
+import UseBeforeLeave from './pages/UseBeforeLeave';
 
 const App = () => {
   const nav = [
@@ -21,6 +22,7 @@ const App = () => {
     'useHover',
     'useConfirm',
     'usePreventLeave',
+    'useBeforeLeave',
   ];
 
   return (
@@ -45,6 +47,7 @@ const App = () => {
           <Route path="/useHover" element={<UseHover />} />
           <Route path="/useConfirm" element={<UseConfirm />} />
           <Route path="/usePreventLeave" element={<UsePreventLeave />} />
+          <Route path="/useBeforeLeave" element={<UseBeforeLeave />} />
         </Routes>
       </div>
     </div>
