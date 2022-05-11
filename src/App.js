@@ -10,6 +10,7 @@ import UseConfirm from './pages/UseConfirm';
 import UseHover from './pages/UseHover';
 import UsePreventLeave from './pages/UsePreventLeave';
 import UseBeforeLeave from './pages/UseBeforeLeave';
+import UseFadeIn from './pages/UseFadeIn';
 
 const App = () => {
   const nav = [
@@ -23,6 +24,7 @@ const App = () => {
     'useConfirm',
     'usePreventLeave',
     'useBeforeLeave',
+    'useFadeIn',
   ];
 
   return (
@@ -48,6 +50,7 @@ const App = () => {
           <Route path="/useConfirm" element={<UseConfirm />} />
           <Route path="/usePreventLeave" element={<UsePreventLeave />} />
           <Route path="/useBeforeLeave" element={<UseBeforeLeave />} />
+          <Route path="/useFadeIn" element={<UseFadeIn />} />
         </Routes>
       </div>
     </div>
