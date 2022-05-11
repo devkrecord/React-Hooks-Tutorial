@@ -11,6 +11,7 @@ import UseHover from './pages/UseHover';
 import UsePreventLeave from './pages/UsePreventLeave';
 import UseBeforeLeave from './pages/UseBeforeLeave';
 import UseFadeIn from './pages/UseFadeIn';
+import UseNetwork from './pages/UseNetwork';
 
 const App = () => {
   const nav = [
@@ -25,6 +26,7 @@ const App = () => {
     'usePreventLeave',
     'useBeforeLeave',
     'useFadeIn',
+    'useNetwork',
   ];
 
   return (
@@ -51,6 +53,7 @@ const App = () => {
           <Route path="/usePreventLeave" element={<UsePreventLeave />} />
           <Route path="/useBeforeLeave" element={<UseBeforeLeave />} />
           <Route path="/useFadeIn" element={<UseFadeIn />} />
+          <Route path="/useNetwork" element={<UseNetwork />} />
         </Routes>
       </div>
     </div>
