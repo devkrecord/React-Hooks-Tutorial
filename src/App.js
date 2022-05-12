@@ -13,6 +13,7 @@ import UseBeforeLeave from './pages/UseBeforeLeave';
 import UseFadeIn from './pages/UseFadeIn';
 import UseNetwork from './pages/UseNetwork';
 import UseScroll from './pages/UseScroll';
+import UseFullscreen from './pages/UseFullscreen';
 
 const App = () => {
   const nav = [
@@ -29,6 +30,7 @@ const App = () => {
     'useFadeIn',
     'useNetwork',
     'useScroll',
+    'useFullscreen',
   ];
 
   return (
@@ -57,6 +59,7 @@ const App = () => {
           <Route path="/useFadeIn" element={<UseFadeIn />} />
           <Route path="/useNetwork" element={<UseNetwork />} />
           <Route path="/useScroll" element={<UseScroll />} />
+          <Route path="/useFullscreen" element={<UseFullscreen />} />
         </Routes>
       </div>
     </div>
