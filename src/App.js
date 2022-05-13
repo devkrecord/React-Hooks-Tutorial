@@ -14,6 +14,8 @@ import UseFadeIn from './pages/UseFadeIn';
 import UseNetwork from './pages/UseNetwork';
 import UseScroll from './pages/UseScroll';
 import UseFullscreen from './pages/UseFullscreen';
+import UseNotification from './pages/UseNotification';
+import UseAxios from './pages/UseAxios';
 
 const App = () => {
   const nav = [
@@ -31,6 +33,8 @@ const App = () => {
     'useNetwork',
     'useScroll',
     'useFullscreen',
+    'useNotification',
+    'useAxios',
   ];
 
   return (
@@ -60,6 +64,8 @@ const App = () => {
           <Route path="/useNetwork" element={<UseNetwork />} />
           <Route path="/useScroll" element={<UseScroll />} />
           <Route path="/useFullscreen" element={<UseFullscreen />} />
+          <Route path="/useNotification" element={<UseNotification />} />
+          <Route path="/useAxios" element={<UseAxios />} />
         </Routes>
       </div>
     </div>
